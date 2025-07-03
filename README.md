@@ -2,7 +2,6 @@
 
 ## ☁️ Infraestrutura no Azure – Projeto de Ambiente com Segurança, Escalabilidade e Alta Disponibilidade
 
-Projetinho simples com uma equência de capturas de telas, para executar no provedor cloud Azure a seguinte arquitetura abaixo:
 
 ![alt text](imagem/ProjetoAzure.drawio.png)
 
