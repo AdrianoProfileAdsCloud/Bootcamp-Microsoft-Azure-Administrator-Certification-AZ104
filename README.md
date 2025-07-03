@@ -51,7 +51,7 @@ Resposável por hospedar os recursos da camada de aplicação:
 
 ![alt text](<imagem/subnet front da vnet aplicação.png>)
 
-    * Contém a VM VM-FrontEnd, que recebe as requisições do Gateway.
+  * Contém a VM VM-FrontEnd, que recebe as requisições do Gateway.
 
 ![alt text](<imagem/vm frontend.png>)
 
@@ -59,7 +59,7 @@ Resposável por hospedar os recursos da camada de aplicação:
 
 ![alt text](<imagem/subnet backend da vnet aplicação.png>)
 
-    * Contém a VM VM-BackEnd, responsável pelo processamento da lógica da aplicação.
+  * Contém a VM VM-BackEnd, responsável pelo processamento da lógica da aplicação.
 
 ![alt text](<imagem/vm backend.png>)
 
@@ -79,7 +79,7 @@ Esta VPC será resposável por armazena os dados da aplicação:
 
 ![alt text](<imagem/subnet db da vnet dados.png>)
 
-    * Contém a VM VM-SQLServer, onde está o banco de dados.
+  * Contém a VM VM-SQLServer, onde está o banco de dados.
 
 ![alt text](<imagem/vm sql server.png>)
 
