@@ -11,20 +11,20 @@
 
 
 
-Este projeto simula uma arquitetura de aplicação distribuída na nuvem Azure, com foco em separação de camadas, segurança e escalabilidade. A arquitetura está dividida em duas VPCs (redes virtuais):
+Este projeto simula uma arquitetura de aplicação distribuída na nuvem Azure, com foco em separação de camadas, segurança e escalabilidade. A arquitetura está dividida em duas VNETs:
 
 🔹 ***Virtual networks***
 
 Para esta arquitetura foi criado duas Virtual Networks(VNETs).
 
-   * Virtual Networks Dados.
+   * Virtual Network Dados.
      * com IP definido 10.1.0.0/16.
 
 ![alt text](<imagem/vpc dados.png>)
 
 ![alt text](<imagem/vpc dados criada.png>)
 
-   * Virtual Networks Aplicação.
+   * Virtual Network Aplicação.
      * com IP definido 10.2.0.0/16.
 
 ![alt text](<imagem/vpc aplicação.png>)
@@ -35,7 +35,7 @@ Para esta arquitetura foi criado duas Virtual Networks(VNETs).
 
 ![alt text](<imagem/vpc dados com as subnets.png>)
 
-🔹 ***VPC - Aplicação***
+🔹 ***VNET - Aplicação***
 Resposável por hospedar os recursos da camada de aplicação:
 
   * Azure Application Gateway
@@ -71,7 +71,7 @@ Resposável por hospedar os recursos da camada de aplicação:
 
 ![alt text](<imagem/web app.png>)    
 
-🔹 VPC - Dados.
+🔹 VNET - Dados.
 Esta VPC será resposável por armazena os dados da aplicação:
 
   * subnet-BD.
@@ -93,13 +93,13 @@ Esta VPC será resposável por armazena os dados da aplicação:
 ![alt text](<imagem/tag vm front end.png>)
    
 
-🔗 Comunicação entre VPCs
+🔗 Comunicação entre VNETs.
 
-   * A comunicação entre a VPC de Aplicação e a VPC de Dados é feita através de Peering, permitindo que as VMs troquem dados de forma segura e privada.Já que temos outros meios para acessos externos.
-      * VPC Dados:
+   * A comunicação entre a VNT de Aplicação e a VNT de Dados é feita através de Peering, permitindo que as VMs troquem dados de forma segura e privada.Já que temos outros meios para acessos externos.
+      * VNET Dados:
 ![alt text](<imagem/perring vnet dados.png>)
 
-      * VPC Aplicação:
+      * VNET Aplicação:
 
 ![alt text](<imagem/peering vnet  aplicacao.png>)
 
@@ -195,7 +195,7 @@ az network vnet subnet create \
 
 ```
 
-3. Cria a VNet de dados e Peering:
+3. Cria a VNET de Dados e Peering:
 
 ```bash
 
