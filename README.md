@@ -284,7 +284,7 @@ Quanto ao  Application Gateawy é recomendo utilizar o portal para configurar de
 
 📙 Reforçando...
 
-Projeto educacional para fins de estudo.
+Projeto acadêmico para fins de estudo.
     
 
 
