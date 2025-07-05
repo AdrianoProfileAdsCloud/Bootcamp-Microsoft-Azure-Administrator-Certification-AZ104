@@ -15,7 +15,7 @@ Este projeto simula uma arquitetura de aplicação distribuída na nuvem Azure, 
 
 🔹 ***Virtual networks***
 
-Para esta arquitetura foi criado duas Virtual Networks(VPC).
+Para esta arquitetura foi criado duas Virtual Networks(VNETs).
 
    * Virtual Networks Dados.
      * com IP definido 10.1.0.0/16.
